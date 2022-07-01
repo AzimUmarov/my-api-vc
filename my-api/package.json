@@ -1,0 +1,36 @@
+{
+  "name": "my-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ace serve --watch",
+    "build": "node ace build --production",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "@adonisjs/assembler": "^5.8.0",
+    "@japa/preset-adonis": "^1.1.0",
+    "@japa/runner": "^2.0.9",
+    "adonis-preset-ts": "^2.1.0",
+    "pino-pretty": "^8.0.0",
+    "typescript": "~4.6",
+    "youch": "^3.2.0",
+    "youch-terminal": "^2.1.4"
+  },
+  "dependencies": {
+    "@adonisjs/auth": "^8.2.1",
+    "@adonisjs/core": "^5.8.3",
+    "@adonisjs/lucid": "^18.0.1",
+    "@adonisjs/redis": "^7.3.0",
+    "@adonisjs/repl": "^3.1.11",
+    "@adonisjs/view": "^6.1.5",
+    "@kaperskyguru/adonis-cache": "^2.1.1",
+    "adonis-autoswagger": "^1.7.6",
+    "adonis5-swagger": "^1.4.1",
+    "luxon": "^2.4.0",
+    "mysql": "^2.18.1",
+    "proxy-addr": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.21"
+  }
+}

@@ -1,0 +1,54 @@
+/api/login:
+  post:
+    tags:
+      - Auth
+    security: []
+    description: Login
+    parameters:
+      - name: credentials
+        in:  body
+        required: true
+        schema:
+          properties:
+            email:
+              type: string
+              example: 'shaxzod@gmail.com'
+              required: true
+            password:
+              type: string
+              example: '12345678'
+              required: true
+    produces:
+      - application/json
+    responses:
+      200:
+        description: Success
+/api/register:
+  post:
+    tags:
+      - Auth
+    security: [ ]
+    description: Login
+    parameters:
+      - name: credentials
+        in: body
+        required: true
+        schema:
+          properties:
+            name:
+              type: string
+              example: 'Shaxzod'
+              required: true
+            email:
+              type: string
+              example: 'shaxzod@gmail.com'
+              required: true
+            password:
+              type: string
+              example: '12345678'
+              required: true
+    produces:
+      - application/json
+    responses:
+      200:
+        description: Success
